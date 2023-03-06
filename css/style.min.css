@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Dancing Script", cursive;
+}
+
+.container {
+  max-width: 1520px;
+  margin: 0px auto;
+  height: 100vh;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  color: gainsboro;
+  transition: 100ms;
+}
+
+.swiper .swiper-button-prev:hover::after,
+.swiper .swiper-button-next:hover::after {
+  color: white;
+  font-size: 60px;
+}
+
+.swiper .swiper-pagination-bullet {
+  background-color: gainsboro;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper .swiper-pagination-bullet:hover {
+  background-color: white;
+}
+
+.slide__1 {
+  width: 90%;
+  height: 500px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.47);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  border: 3px solid grey;
+  min-width: 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 700ms;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 500ms;
+}
+
+.swiper-slide img:hover {
+  height: 110%;
+}
